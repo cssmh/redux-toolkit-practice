@@ -7,7 +7,7 @@ import {
 } from "../features/counter/counterSlice";
 
 const Home = () => {
-  const {count} = useSelector((state) => state.counter);
+  const { count } = useSelector((state) => state.counter);
   const dispatch = useDispatch();
   return (
     <div className="flex justify-center items-center h-screen gap-6">
@@ -26,7 +26,7 @@ const Home = () => {
       </button>
       <button
         className="bg-blue-500 text-white p-4 rounded-lg"
-        onClick={() => dispatch(multiply(5))}
+        onClick={() => dispatch(multiply(15))}
       >
         multiply
       </button>
